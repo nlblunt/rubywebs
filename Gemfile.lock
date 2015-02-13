@@ -43,6 +43,11 @@ GEM
     arel (6.0.0)
     autoprefixer-rails (4.0.2.2)
       execjs
+    aws-sdk (1.61.0)
+      aws-sdk-v1 (= 1.61.0)
+    aws-sdk-v1 (1.61.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     bcrypt (3.1.9)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -123,6 +128,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.18.1)
     phantomjs (1.9.7.1)
     rack (1.6.0)
     rack-test (0.6.2)
@@ -146,6 +152,11 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.1)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.3)
+    rails_stdout_logging (0.0.3)
     railties (4.2.0.beta2)
       actionpack (= 4.2.0.beta2)
       activesupport (= 4.2.0.beta2)
@@ -229,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   angular-rails-templates
   autoprefixer-rails
+  aws-sdk
   bootstrap-sass
   bower-rails
   byebug
@@ -241,8 +253,10 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails (~> 4.0.0.beta2)
   paperclip
+  pg
   phantomjs
   rails (= 4.2.0.beta2)
+  rails_12factor
   rspec-rails
   sass-rails (~> 5.0.0.beta1)
   sdoc (~> 0.4.0)
