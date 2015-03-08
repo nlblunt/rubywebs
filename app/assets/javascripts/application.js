@@ -22,5 +22,7 @@
 //= require directives/directives
 //= require services/services
 //= require controllers/controllers
+//= require angulartics/dist/angulartics.min
+//= require angulartics/dist/angulartics-ga.min
 //= require_tree .
 
