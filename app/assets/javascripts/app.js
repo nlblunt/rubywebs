@@ -22,6 +22,11 @@
 			templateUrl: "html/index.html",
 			controller: "homeController"
 		})
+		.when('/services',
+		{
+			templateUrl: "html/services.html",
+			controller: "homeController"
+		})
 		.otherwise(
 		{
 			redirectTo: '/'
