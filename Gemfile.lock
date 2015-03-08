@@ -130,6 +130,9 @@ GEM
       mime-types
     pg (0.18.1)
     phantomjs (1.9.7.1)
+    prerender_rails (1.1.2)
+      activesupport
+      rack
     rack (1.6.0)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -255,6 +258,7 @@ DEPENDENCIES
   paperclip
   pg
   phantomjs
+  prerender_rails
   rails (= 4.2.0.beta2)
   rails_12factor
   rspec-rails
