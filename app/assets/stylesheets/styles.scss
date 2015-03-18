@@ -6,7 +6,10 @@ body *
 
 body
 {
-	background-color: #6E6565;
+	background-color: #EDEDED;
+	background-image: image_url("grymarb.gif");
+	background-repeat: tile;
+	
 }
 
 div#index-container
@@ -19,14 +22,17 @@ div#index-container
 header
 {
 	width: 100%;
-	height: 100px;
+	height: 165px;
+	background-color: white;
 }
 
 header h1
 {
 	background-image: image_url('rubyweb_logo.png');
+	background-size: contain;
 	background-repeat: no-repeat;
 	height: 145px;
+	text-indent: -9000px;
 }
 
 nav
@@ -46,12 +52,19 @@ nav ul li
 	height: 20px;
 }
 
+nav ul li:hover
+{
+	background-color: grey;
+	color: white;
+}
+
 li.left
 {
 	width:30px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-	background-color: red;
+	//background-color: red;
+	background-color: white;
 	float: left;
 }
 
@@ -60,7 +73,10 @@ li.center
 	float:left;
 	width: 150px;
 	text-align: center;
-	background-color: red;
+	//background-color: red;
+	background-color: white;
+	border-left: solid 1px #EDEDED;
+	border-right: solid 1px #EDEDED;
 }
 
 li.right
@@ -68,6 +84,24 @@ li.right
 	width: 30px;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	background-color: red;
+	//background-color: red;
+	background-color: white;
 	float:left;
+}
+
+.info-card
+{
+	margin: 10px;
+	width: 300px;
+	height: 150px;
+	background-color: white;
+	float: left;
+	padding: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.info-card h2
+{
+	text-align: center;
+	border-bottom: solid 1px silver;
 }
