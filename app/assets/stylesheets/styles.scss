@@ -14,9 +14,15 @@ body
 
 div#index-container
 {
-	width: 960px;
+	//width: 960px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+div#header-top
+{
+	height: 145px;
 }
 
 header
@@ -32,41 +38,36 @@ header h1
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 145px;
+	width: 207px;
+	width: 30%;
 	text-indent: -9000px;
+	float: left;
 }
 
-nav
+nav#main-nav
 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 660px;
+	clear: both;
 }
 
-nav ul
+nav#main-nav ul
 {
 	list-style: none;
 }
 
-nav ul li
+nav#main-nav ul li
 {
 	height: 20px;
 }
 
-nav ul li:hover
+nav#main-nav ul li:hover
 {
-	background-color: grey;
+	background-color: rgb(247,247,247);
 	color: white;
 }
 
-li.left
-{
-	width:30px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	//background-color: red;
-	background-color: white;
-	float: left;
-}
 
 li.center
 {
@@ -79,25 +80,19 @@ li.center
 	border-right: solid 1px #EDEDED;
 }
 
-li.right
-{
-	width: 30px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	//background-color: red;
-	background-color: white;
-	float:left;
-}
 
 .info-card
 {
-	margin: 10px;
-	width: 300px;
-	height: 150px;
+//	margin: 10px;
+	//width: 300px;
+	//height: 150px;
+	width: 31.3%;
+	margin: 1%;
+	height: 100%;
 	background-color: white;
-	float: left;
+	//float: left;
+	display: inline-block;
 	padding: 10px;
-	font-size: 12px;
 	font-family: 'Playfair Display', serif;
 }
 
@@ -106,4 +101,35 @@ li.right
 	text-align: center;
 	border-bottom: solid 1px silver;
 	font-size: 24px;
+}
+
+footer ul
+{
+	list-style: none;
+	width: 960px;
+	height: 20px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer ul li
+{
+	float: left;
+	margin-right: 20px;
+}
+
+div#main-nav
+{
+	height: 165px;
+	//width: 660px;
+	width: 70%;
+	float: left;
+	//padding-top: 62px;
+	padding-top: 8%;
+}
+
+div#content
+{
+	height: 100%;
 }
