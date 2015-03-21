@@ -6,94 +6,84 @@ body *
 
 body
 {
-	background-color: #EDEDED;
-	background-image: image_url("grymarb.gif");
-	background-repeat: tile;
+	background-color: #3C0C0B;
+	//background-color: #EDEDED;
+	//background-image: image_url("grymarb.gif");
+	min-width: 320px;
 	
 }
 
 div#index-container
 {
-	//width: 960px;
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: white;
 }
 
-div#header-top
+div#logo
 {
-	height: 145px;
+	width: 100%;
 }
 
 header
 {
 	width: 100%;
-	height: 165px;
 	background-color: white;
 }
 
 header h1
 {
-	background-image: image_url('rubyweb_logo.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 145px;
-	width: 207px;
-	width: 30%;
-	text-indent: -9000px;
-	float: left;
+	width: 70%;
+	float: right;
 }
 
-nav#main-nav
+header img
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 660px;
-	clear: both;
+	width: 100%;
+	height: 100px;
 }
 
-nav#main-nav ul
+.navbar-white
 {
-	list-style: none;
-}
-
-nav#main-nav ul li
-{
-	height: 20px;
-}
-
-nav#main-nav ul li:hover
-{
-	background-color: rgb(247,247,247);
-	color: white;
-}
-
-
-li.center
-{
-	float:left;
-	width: 150px;
-	text-align: center;
-	//background-color: red;
 	background-color: white;
-	border-left: solid 1px #EDEDED;
-	border-right: solid 1px #EDEDED;
+	border-color: white;
+	min-height: 0;
 }
 
+#navbar-brand-ruby
+{
+	color: #C51001;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: #C51001;
+}
+
+p#slogan
+{
+	font-weight: bold;
+	color: #660001;
+}
 
 .info-card
 {
 //	margin: 10px;
 	//width: 300px;
 	//height: 150px;
-	width: 31.3%;
-	min-width: 150px;
+	width: 30.3%;
+	min-width: 200px;
 	margin: 1%;
-	height: 100%;
-	background-color: white;
-	//float: left;
-	display: inline-block;
+	//height: 100%;
+	//background-color: rgb(247,247,247);
+	float: left;
+	//display: inline-block;
 	padding: 10px;
+	vertical-align: top;
+	//border: solid 1px #660001;
+	//border-radius: 5px;
+	//font-size: 1em;
 	font-family: 'Playfair Display', serif;
 }
 
@@ -102,14 +92,18 @@ li.center
 	text-align: center;
 	border-bottom: solid 1px silver;
 	font-size: 24px;
+	color: #660001;
 }
 
+footer
+{
+	color: white;
+}
 footer ul
 {
 	list-style: none;
 	width: 960px;
 	height: 20px;
-	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -120,17 +114,21 @@ footer ul li
 	margin-right: 20px;
 }
 
-div#main-nav
+div.content
 {
-	height: 165px;
-	//width: 660px;
-	width: 70%;
-	float: left;
-	//padding-top: 62px;
-	padding-top: 8%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
 }
 
-div#content
+div#content-row
 {
 	height: 100%;
 }
+
+div#info
+{
+	clear: both;
+}
+/* Services */
