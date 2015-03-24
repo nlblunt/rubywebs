@@ -6,20 +6,84 @@ body *
 
 body
 {
-	background-color: #3C0C0B;
+	//background-color: #3C0C0B;
 	//background-color: #EDEDED;
 	//background-image: image_url("grymarb.gif");
+	background-color: white;
+	//background-color: rgb(16,7,7);
 	min-width: 320px;
+		color: rgb(102,104,139);
 	
 }
 
-div#index-container
+.sm-margin-bottom
 {
-	width: 100%;
+	margin-bottom: 10px;
+}
+
+h2
+{
+	//text-align: center;
+	//border-bottom: solid 1px silver;
+	font-size: 24px;
+	margin-bottom: 10px;
+	//color: #C51001;
+}
+
+.info-card
+{
+	padding: 20px;
+	//font-family: 'Playfair Display', serif;
+	color: rgb(102,104,139);
+}
+
+.info-card ul
+{
+	margin-left: 20px;
+}
+.content
+{
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
 }
+
+.footer-background
+{
+	background-color: #E7E7E7;
+}
+
+footer
+{
+	color: #C51001;
+}
+
+footer ul
+{
+	list-style: none;
+	width: 100%;
+}
+
+.row-spacer
+{
+	background-color: #C51001;
+	height: 30px;
+}
+
+.updates h4
+{
+	margin-bottom: 15px;
+}
+
+.updates h5
+{
+	border-bottom: solid 1px silver;
+}
+.updates p
+{
+	text-align: justify;
+}
+
 
 div#logo
 {
@@ -30,12 +94,6 @@ header
 {
 	width: 100%;
 	background-color: white;
-}
-
-header h1
-{
-	width: 70%;
-	float: right;
 }
 
 header img
@@ -65,70 +123,5 @@ p#slogan
 {
 	font-weight: bold;
 	color: #660001;
-}
-
-.info-card
-{
-//	margin: 10px;
-	//width: 300px;
-	//height: 150px;
-	width: 30.3%;
-	min-width: 200px;
-	margin: 1%;
-	//height: 100%;
-	//background-color: rgb(247,247,247);
-	float: left;
-	//display: inline-block;
-	padding: 10px;
-	vertical-align: top;
-	//border: solid 1px #660001;
-	//border-radius: 5px;
-	//font-size: 1em;
-	font-family: 'Playfair Display', serif;
-}
-
-.info-card h2
-{
-	text-align: center;
-	border-bottom: solid 1px silver;
-	font-size: 24px;
-	color: #660001;
-}
-
-footer
-{
-	color: white;
-}
-footer ul
-{
-	list-style: none;
-	width: 960px;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer ul li
-{
-	float: left;
-	margin-right: 20px;
-}
-
-div.content
-{
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-}
-
-div#content-row
-{
-	height: 100%;
-}
-
-div#info
-{
-	clear: both;
 }
 /* Services */
