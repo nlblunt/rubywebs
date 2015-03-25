@@ -12,7 +12,7 @@ body
 	background-color: white;
 	//background-color: rgb(16,7,7);
 	min-width: 320px;
-		color: rgb(102,104,139);
+	color: #494646;
 	
 }
 
@@ -34,7 +34,7 @@ h2
 {
 	padding: 20px;
 	//font-family: 'Playfair Display', serif;
-	color: rgb(102,104,139);
+	//color: rgb(102,104,139);
 }
 
 .info-card ul
@@ -46,6 +46,13 @@ h2
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	
+	font-family: 'Bree Serif', serif;
+}
+
+.content p
+{
+	margin-bottom: 20px;	
 }
 
 .footer-background
