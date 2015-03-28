@@ -62,11 +62,13 @@ h2
 
 .footer-background
 {
+		margin-top: 20px;
 	background-color: #E7E7E7;
 }
 
 footer
 {
+	clear: left;
 	color: #C51001;
 }
 
@@ -140,5 +142,22 @@ p#slogan
 	font-weight: bold;
 	//color: #660001;
 	color: #C51001;
+}
+
+h2#portfolio
+{
+	margin: 20px 0;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+}
+
+img.portfolio
+{
+	width: 100%;
+}
+
+h4.portfolio
+{
+	text-align: center;
 }
 /* Services */
