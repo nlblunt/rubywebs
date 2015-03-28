@@ -16,6 +16,11 @@ body
 	
 }
 
+h1
+{
+	color: #660001;
+}
+
 .sm-margin-bottom
 {
 	margin-bottom: 10px;
@@ -46,7 +51,7 @@ h2
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	
+	//background-color: white;
 	font-family: 'Bree Serif', serif;
 }
 
@@ -73,8 +78,8 @@ footer ul
 
 .row-spacer
 {
-	background-color: #C51001;
-	height: 30px;
+	background-color: #9B1005;
+	height: 20px;
 }
 
 .updates h4
@@ -91,6 +96,10 @@ footer ul
 	text-align: justify;
 }
 
+.content h2
+{
+	color: #660001;
+}
 
 div#logo
 {
@@ -129,6 +138,7 @@ header img
 p#slogan
 {
 	font-weight: bold;
-	color: #660001;
+	//color: #660001;
+	color: #C51001;
 }
 /* Services */
