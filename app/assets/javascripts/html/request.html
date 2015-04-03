@@ -31,15 +31,29 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
+               <h2>Contact Information</h2>
                <label>First Name</label>
                <input type="text" class="form-control" ng-model="contact.first_name">
-               <label>Last Name</lable>
+               <label>Last Name</label>
                <input type="text" class="form-control" ng-model="contact.last_name">
-               <label>Phone</label>
+               <label>Contact Phone</label>
                <input type="tel" class="form-control" ng-model="contact.phone">
-               <label>Email</label>
+               <label>Contact Email</label>
                <input type="email" class="form-control" ng-model="contact.email">
+            </div>
           </div>
+        
+        <div class="col-sm-6">
+            <div class="form-group">
+                <h2>Business Information</h2>
+                <label>Business Name</label>
+                <input type="text" class="form-control" ng-model="contact.business_name">
+                <label>Business Phone</label>
+                <input type="tel" class="form-control" ng-model="contact.business_phone">
+                <label>Existing website address</label>
+                <input type="text" class="form-control" ng-model="contact.business_website">
+            </div>
+        </div>
         </div>
       </form>
     </div>
