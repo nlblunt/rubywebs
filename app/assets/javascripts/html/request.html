@@ -27,19 +27,19 @@
     </div>
     
     <div class="content">
-      <form>
+      <form name="contactUs">
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
                <h2>Contact Information</h2>
-               <label>First Name</label>
-               <input type="text" class="form-control" ng-model="contact.first_name">
-               <label>Last Name</label>
-               <input type="text" class="form-control" ng-model="contact.last_name">
-               <label>Contact Phone</label>
-               <input type="tel" class="form-control" ng-model="contact.phone">
-               <label>Contact Email</label>
-               <input type="email" class="form-control" ng-model="contact.email">
+               <label>First Name </label><span class="required">*</span>
+               <input type="text" class="form-control" ng-model="contact.first_name" required>
+               <label>Last Name</label><span class="required">*</span>
+               <input type="text" class="form-control" ng-model="contact.last_name" required>
+               <label>Contact Phone</label><span class="required">*</span>
+               <input type="tel" class="form-control" ng-model="contact.phone" required>
+               <label>Contact Email</label><span class="required">*</span>
+               <input type="email" class="form-control" ng-model="contact.email" required>
             </div>
           </div>
         
@@ -52,6 +52,15 @@
                 <input type="tel" class="form-control" ng-model="contact.business_phone">
                 <label>Existing website address</label>
                 <input type="text" class="form-control" ng-model="contact.business_website">
+                <label>Prefered Contact</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="prefcontact" value="email" ng-model="contact.prefcontact">Email
+                    </label>
+                    <label>
+                        <input type="radio" name="prefcontact" value="phone" ng-model="contact.prefcontact">Phone
+                    </label>
+                </div>
             </div>
         </div>
         </div>
@@ -90,8 +99,35 @@
         </div>
         
          <div class="row">
-              
+              <div class="col-sm-12">
+                  <label>Website Development Acknowledgment</label>
+                  <p>Here is the website development cost and agreement</p>
+                  
+                  <label>Website Hosting Acknowledgement</label>
+                  <p>Here is the website hosting ackanledgment</p>
+                  
+                  <div class="checkbox">
+                      <label><input type="checkbox" ng-model="contact.ack" required>I have read the acknowledgements</label><span class="required">*</span>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-default" ng-disabled="contactUs.$invalid" ng-click="submit_contact()">Submit</button>
+              </div>
          </div>
       </form>
+    </div>
+    
+    <div class="row footer-background">
+      <div class="row content">
+      <footer>
+        <div class="col-sm-4 sm-margin-bottom">
+          <ul>
+            <li>Ruby Webs</li>
+            <li><a href="mailto:nicolas.wb@outlook.com">Email</a></li>
+            <li>P: 541-283-6385</li>
+            <li><a href="https://plus.google.com/111061938625311669752" rel="publisher">Find us on Google+</a></li>
+          </ul>
+        </div>
+      </footer>
+      </div>
     </div>
 </div>

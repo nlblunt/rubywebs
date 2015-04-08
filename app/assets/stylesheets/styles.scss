@@ -166,4 +166,14 @@ h4.portfolio
 	border: solid 1px #9B1005;
 	border-radius: 5px;
 }
+
+.required
+{
+	color: red;
+}
+
+input.ng-invalid.ng-dirty
+{
+	border: solid 1px red;
+}
 /* Services */

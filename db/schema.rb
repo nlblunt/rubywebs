@@ -11,6 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150408061851) do
+
+  create_table "requests", force: :cascade do |t|
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "businessName"
+    t.string   "businessPhone"
+    t.string   "businessWebsite"
+    t.string   "prefcontact"
+    t.text     "whatItDoes"
+    t.text     "siteLayout"
+    t.text     "dynamic"
+    t.text     "users"
+    t.text     "analysis"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
 end
