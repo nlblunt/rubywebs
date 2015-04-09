@@ -7,7 +7,7 @@ appControllers.controller('homeController', ['$scope', function($scope)
     	$scope.$root.body_id = "home";
 }]);
 
-appControllers.controller('requestController', ['$scope', function($scope)
+appControllers.controller('requestController', ['$scope', 'requestFactory', function($scope, requestFactory)
 {
     $scope.$root.display_title = "Ruby Webs - Request Website Developing Information";
     $scope.$root.metadescription = "Ruby Webs - Request website and hosting information";
@@ -16,5 +16,7 @@ appControllers.controller('requestController', ['$scope', function($scope)
     $scope.submit_contact = function()
     {
         console.log($scope.contact);  
+        requestFactory.saveRequest($scope.contact);
+
     };
 }]);
