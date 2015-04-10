@@ -1,30 +1,5 @@
 <div class="container-fluid">
-    <div class="row">
-        <header>
-            <nav class="navbar navbar-inverse">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="navbar-brand-ruby" class="navbar-brand" href="/#!/">Ruby Webs</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Our Service</a></li>
-                        <li><a href="#">Service Plans</a></li>
-                        <li><a href="#">Questions</a></li>
-                        <li><a href="/#!/request">Request Info</a></li>
-                    </ul>
-
-                    <p id="slogan" class="text-ruby navbar-text pull-right">Website + Insight = Success</p>
-                </div>
-            </nav>
-        </header>
-    </div>
+        <rw-header></rw-header>
     
     <div class="content">
       <form name="contactUs">
@@ -100,14 +75,14 @@
         
          <div class="row">
               <div class="col-sm-12">
-                  <label>Website Development Acknowledgment</label>
-                  <p>Here is the website development cost and agreement</p>
+                  <label>Website Development Acknowledgement</label>
+                  <p>All websites created by Ruby Webs have $0.00 upfront cost.  Most websites will qualify for the standard development cost of $500.00, paid monthly as low as $10.00.  More complex sites will have a higher cost.  This request is not a binding contract.  No charges will incur at this time.  Only after the initial website is agreed upon, will a binding contract be issued and billing begin.</p>
                   
                   <label>Website Hosting Acknowledgement</label>
-                  <p>Here is the website hosting ackanledgment</p>
+                  <p>All websites hosted with Ruby Webs are charged at a monthly rate of $20.00.  This charge includes the hosting service, domain name registration, search engine optimization, database maintenance, security updates, website restructuring and modification, and comprehensive analysis of website traffic.  This charge only begins after a binding contract is established after the initial website is agreed upon and the site is accessible on the web.</p>
                   
                   <div class="checkbox">
-                      <label><input type="checkbox" ng-model="contact.ack" required>I have read the acknowledgements</label><span class="required">*</span>
+                      <label><input type="checkbox" ng-model="contact.ack" required>I have read the Acknowledgements</label><span class="required">*</span>
                   </div>
                   
                   <button type="submit" class="btn btn-default" ng-disabled="contactUs.$invalid" ng-click="submit_contact()">Submit</button>
@@ -116,18 +91,5 @@
       </form>
     </div>
     
-    <div class="row footer-background">
-      <div class="row content">
-      <footer>
-        <div class="col-sm-4 sm-margin-bottom">
-          <ul>
-            <li>Ruby Webs</li>
-            <li><a href="mailto:nicolas.wb@outlook.com">Email</a></li>
-            <li>P: 541-283-6385</li>
-            <li><a href="https://plus.google.com/111061938625311669752" rel="publisher">Find us on Google+</a></li>
-          </ul>
-        </div>
-      </footer>
-      </div>
-    </div>
+    <rw-footer></rw-footer>
 </div>

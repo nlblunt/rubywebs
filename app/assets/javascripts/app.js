@@ -8,6 +8,7 @@
 		'ui.bootstrap',
 		'appControllers',
 		'appServices',
+		'appDirectives',
 		'angulartics',
 		'angulartics.google.analytics'
 
@@ -31,6 +32,11 @@
         {
             templateUrl: "html/request.html",
             controller: "requestController"
+        })
+        .when('/next',
+        {
+        	templateUrl: "html/next.html",
+        	controller: "requestController"
         })
 		.otherwise(
 		{
