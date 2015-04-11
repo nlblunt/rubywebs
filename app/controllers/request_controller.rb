@@ -3,6 +3,7 @@ class RequestController < ApplicationController
 		request = Request.create(request_params)
 
 		if request.valid?
+			RequestMailer.new_signup(request).deliver_later
 			render nothing: true, status: :created
 		else
 			render nothing: true, status: :error
