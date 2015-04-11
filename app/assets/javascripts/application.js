@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require angular/angular.min
+//= require angular/angular
 // require ng-file-upload/angular-file-upload
 //= require angular-route/angular-route
 //= require angular-rails-templates
