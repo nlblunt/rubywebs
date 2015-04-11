@@ -1,4 +1,4 @@
-var appServices = angular.module('appServices', ['ngResource', 'angularFileUpload']);
+var appServices = angular.module('appServices', ['ngResource']);
 
 appServices.factory('requestFactory',['$resource', '$q', function($resource, $q)
 {
