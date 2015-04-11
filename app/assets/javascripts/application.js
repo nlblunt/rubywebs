@@ -14,12 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require angular/angular
-//= require ng-file-upload/angular-file-upload
-//= require angular-route/angular-route
+//= require angular/angular.min
+// require ng-file-upload/angular-file-upload
+//= require angular-route/angular-route.min
 //= require angular-rails-templates
-//= require angular-resource/angular-resource
-//= require angular-bootstrap/ui-bootstrap-tpls
+//= require angular-resource/angular-resource.min
+//= require angular-bootstrap/ui-bootstrap-tpls.min
 //= require directives/directives
 //= require services/services
 //= require controllers/controllers
